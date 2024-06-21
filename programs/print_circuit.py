@@ -123,7 +123,7 @@ def print_circuit( x, y, value,  session,  pil_neg, pil_pos, limits_coordinates,
     cpil_neg  = mcolors.to_rgb(color_pil_neg)
 
 
-    if (cosine_similarity(cpil_neg, cpil_pos)>0.9):
+    if (cosine_similarity(cpil_neg, cpil_pos)>0.8):
         cpil_pos = (1,0,0)
         cpil_neg = (0,1,0)
     
